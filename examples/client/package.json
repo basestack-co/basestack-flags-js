@@ -1,0 +1,16 @@
+{
+  "name": "flags-client-example",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bunx vite",
+    "build": "bunx vite build",
+    "preview": "bunx vite preview"
+  },
+  "dependencies": {
+    "vite": "^5.4.10"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}

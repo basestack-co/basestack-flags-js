@@ -1,0 +1,18 @@
+{
+  "lockfileVersion": 1,
+  "configVersion": 1,
+  "workspaces": {
+    "": {
+      "name": "flags-server-example",
+      "dependencies": {
+        "@basestack/flags-js": "link:../..",
+        "hono": "^4.6.8",
+      },
+    },
+  },
+  "packages": {
+    "@basestack/flags-js": ["@basestack/flags-js@link:../..", {}],
+
+    "hono": ["hono@4.10.5", "", {}, "sha512-h/MXuTkoAK8NG1EfDp0jI1YLf6yGdDnfkebRO2pwEh5+hE3RAJFXkCsnD0vamSiARK4ZrB6MY+o3E/hCnOyHrQ=="],
+  }
+}

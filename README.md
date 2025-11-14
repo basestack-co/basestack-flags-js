@@ -35,6 +35,15 @@ bun run publish # lint + test before publishing to npm
 
 Running `npm publish` directly will also trigger the lint/test pipeline because of the `prepublishOnly` hook.
 
+## Examples
+
+Minimal example apps live under `examples/` to manually verify the SDK in different environments:
+
+- `examples/client`: Vite + TypeScript client rendered with Bun (`bun run dev`)
+- `examples/server`: Hono server running on Bun (`bun run dev`)
+
+Both examples depend on the local package via `link:../..`, so run `bun run build` at the repo root first to ensure `dist/` is up-to-date.
+
 ## Installation
 
 First, let's install some packages!
