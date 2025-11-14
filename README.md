@@ -30,7 +30,10 @@ bun run lint  # run Biome lint checks
 bun run format # format files via Biome
 bun run test   # run the Vitest suite once
 bun run test:watch # watch and re-run impacted tests
+bun run publish # lint + test before publishing to npm
 ```
+
+Running `npm publish` directly will also trigger the lint/test pipeline because of the `prepublishOnly` hook.
 
 ## Installation
 

@@ -1,7 +1,8 @@
 {
   "name": "@basestack/flags-js",
   "version": "1.1.1",
-  "description": "",
+  "description": "Feature Flags SDK for JavaScript",
+  "repository": "https://github.com/basestack-co/basestack-flags-js",
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -24,7 +25,9 @@
     "format": "bunx biome format --write .",
     "check": "bunx biome check --write .",
     "test": "bunx vitest run",
-    "test:watch": "bunx vitest watch"
+    "test:watch": "bunx vitest watch",
+    "prepublishOnly": "bun run lint && bun run test",
+    "publish": "bun run lint && bun run test && npm publish"
   },
   "keywords": [
     "feature-flags",
