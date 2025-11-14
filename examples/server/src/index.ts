@@ -1,5 +1,5 @@
-import { FlagsSDK } from "../../../dist";
 import { Hono } from "hono";
+import { FlagsSDK } from "../../../dist";
 
 const app = new Hono();
 
