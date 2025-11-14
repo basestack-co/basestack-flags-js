@@ -21,7 +21,10 @@
     "clean": "node_modules && rm -rf dist",
     "update:deps": "bun update -i",
     "lint": "bunx biome lint .",
-    "format": "bunx biome format --write ."
+    "format": "bunx biome format --write .",
+    "check": "bunx biome check --write .",
+    "test": "bunx vitest run",
+    "test:watch": "bunx vitest watch"
   },
   "keywords": [
     "feature-flags",
@@ -36,6 +39,7 @@
   "devDependencies": {
     "@biomejs/biome": "^2.3.5",
     "tsdown": "^0.16.4",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "vitest": "^4.0.9"
   }
 }
