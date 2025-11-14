@@ -18,12 +18,23 @@
   "scripts": {
     "build": "tsdown --config tsdown.config.ts",
     "dev": "tsdown --config tsdown.config.ts --watch",
-    "clean": "node_modules && rm -rf dist"
+    "clean": "node_modules && rm -rf dist",
+    "update:deps": "bun update -i",
+    "lint": "bunx biome lint .",
+    "format": "bunx biome format --write ."
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "feature-flags",
+    "feature-flag-sdk",
+    "feature-flag-management",
+    "feature-flag-sdk-js",
+    "basestack"
+  ],
+  "author": "Basestack",
   "license": "AGPL-3.0",
+  "packageManager": "bun@1.3.2",
   "devDependencies": {
+    "@biomejs/biome": "^2.3.5",
     "tsdown": "^0.16.4",
     "typescript": "^5.8.3"
   }

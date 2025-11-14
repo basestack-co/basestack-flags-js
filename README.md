@@ -15,6 +15,21 @@ Quick links
 - [About](https://basestack.co/)
 - [Documentation](https://docs.basestack.co/)
 
+## Development
+
+This repository uses Bun 1.3.2 as the package manager/runtime. Make sure that version is installed locally (`bun --version` should print `1.3.2`) before running any scripts.
+
+Install dependencies and use the bundled scripts via Bun. Biome is configured for linting and formatting, so you can keep the codebase consistent with the commands below:
+
+```bash
+bun install
+bun run dev   # builds in watch mode
+bun run build # produces the package in dist/
+bun run update:deps # interactively choose dependency upgrades
+bun run lint  # run Biome lint checks
+bun run format # format files via Biome
+```
+
 ## Installation
 
 First, let's install some packages!

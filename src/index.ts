@@ -41,10 +41,7 @@ export interface Flag {
 export class FlagsSDK {
   private config: Required<SDKConfig>;
   private readonly BASE_URL: string;
-  private cache: Map<
-    string,
-    { data: Flag | { flags: Flag[] }; timestamp: number }
-  >;
+  private cache: Map<string, { data: Flag | { flags: Flag[] }; timestamp: number }>;
   private readonly fetchImplementation: typeof fetch;
   private initPromise: Promise<void> | null = null;
 
@@ -61,8 +58,7 @@ export class FlagsSDK {
     this.config = {
       baseURL: config.baseURL || "https://flags-api.basestack.co/v1", // Fallback default
       fetchImpl:
-        config.fetchImpl ||
-        (typeof window !== "undefined" ? window.fetch : globalThis.fetch),
+        config.fetchImpl || (typeof window !== "undefined" ? window.fetch : globalThis.fetch),
       cache: {
         enabled: true,
         ttl: 5 * 60 * 1000, // Default 5 minutes
@@ -79,9 +75,7 @@ export class FlagsSDK {
 
     // Validate fetch implementation
     if (!this.fetchImplementation) {
-      throw new Error(
-        "Fetch API is not available. Please provide a fetch implementation."
-      );
+      throw new Error("Fetch API is not available. Please provide a fetch implementation.");
     }
   }
 
@@ -98,9 +92,7 @@ export class FlagsSDK {
     this.initPromise = (async () => {
       // If specific flags to preload are provided
       if (this.config.preloadFlags && this.config.preloadFlags.length > 0) {
-        await Promise.all(
-          this.config.preloadFlags.map((slug) => this.getFlag(slug))
-        );
+        await Promise.all(this.config.preloadFlags.map((slug) => this.getFlag(slug)));
       } else {
         // Otherwise, preload all flags
         await this.getAllFlags();
@@ -120,9 +112,7 @@ export class FlagsSDK {
     if (!this.config.cache.enabled) return false;
 
     const cached = this.cache.get(cacheKey);
-    return cached
-      ? Date.now() - cached.timestamp < this.config.cache.ttl!
-      : false;
+    return cached ? Date.now() - cached.timestamp < this.config.cache.ttl! : false;
   }
 
   /**
@@ -142,10 +132,7 @@ export class FlagsSDK {
    * @param options - Additional fetch options
    * @returns Parsed response data
    */
-  private async request<T>(
-    endpoint: string,
-    options: RequestInit = {}
-  ): Promise<T> {
+  private async request<T>(endpoint: string, options: RequestInit = {}): Promise<T> {
     const url = `${this.BASE_URL}${endpoint}`;
     const cacheKey = url + JSON.stringify(options.headers || {});
 
