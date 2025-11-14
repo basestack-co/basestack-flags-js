@@ -99,6 +99,7 @@ That's it! Now your app is ready to start using feature flags and other features
 import { FlagsSDK } from "@basestack/flags-js";
 
 const client = new FlagsSDK({
+  baseURL: "https://flags-api.basestack.co/v1",
   projectKey: "your-project-key",
   environmentKey: "your-environment-key",
 });
