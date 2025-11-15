@@ -1,6 +1,6 @@
 {
   "name": "@basestack/flags-js",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Feature Flags SDK for JavaScript",
   "repository": "https://github.com/basestack-co/basestack-flags-js",
   "private": false,
