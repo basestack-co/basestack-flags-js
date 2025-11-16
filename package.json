@@ -29,13 +29,6 @@
     "test:watch": "bunx vitest watch",
     "prepublishOnly": "bun run lint && bun run test && bun run build"
   },
-  "keywords": [
-    "feature-flags",
-    "feature-flag-sdk",
-    "feature-flag-management",
-    "feature-flag-sdk-js",
-    "basestack"
-  ],
   "author": "Basestack",
   "license": "MIT",
   "packageManager": "bun@1.3.2",
@@ -50,5 +43,31 @@
     "tsdown": "^0.16.4",
     "typescript": "^5.8.3",
     "vitest": "^4.0.9"
-  }
+  },
+  "keywords": [
+    "feature-flags",
+    "feature-flag",
+    "feature-toggle",
+    "feature-toggles",
+    "feature-management",
+    "feature-rollout",
+    "feature-gating",
+    "js",
+    "javascript",
+    "javascript-sdk",
+    "sdk",
+    "client-sdk",
+    "frontend",
+    "backend",
+    "node",
+    "nodejs",
+    "node-js",
+    "esm",
+    "remote-config",
+    "config-management",
+    "a-b-testing",
+    "experimentation",
+    "flags",
+    "feature"
+  ]
 }

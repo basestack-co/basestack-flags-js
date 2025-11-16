@@ -1,4 +1,4 @@
-# JS Vanilla Integration
+# Basestack Feature Flags Javascript Integration
 
 Integration with JavaScript Vanilla helps and facilitates the process of testing and developing features in production and other environments. The vanilla version can be integrated into any environment that uses JavaScript, you can use this integration in projects like Vue, Svelte or other JavaScript frameworks.
 
