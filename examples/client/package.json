@@ -5,10 +5,11 @@
   "scripts": {
     "dev": "bunx vite",
     "build": "bunx vite build",
-    "preview": "bunx vite preview"
+    "preview": "bunx vite preview",
+    "update:deps": "bun update -i"
   },
   "dependencies": {
-    "vite": "^5.4.10"
+    "vite": "^7.2.2"
   },
   "devDependencies": {
     "typescript": "^5.8.3"

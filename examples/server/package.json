@@ -4,9 +4,10 @@
   "type": "module",
   "scripts": {
     "dev": "bun --watch src/index.ts",
-    "start": "bun src/index.ts"
+    "start": "bun src/index.ts",
+    "update:deps": "bun update -i"
   },
   "dependencies": {
-    "hono": "^4.6.8"
+    "hono": "^4.10.6"
   }
 }
