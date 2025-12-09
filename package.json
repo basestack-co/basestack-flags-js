@@ -1,6 +1,6 @@
 {
   "name": "@basestack/flags-js",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Feature Flags SDK for JavaScript",
   "repository": "https://github.com/basestack-co/basestack-flags-js",
   "private": false,
@@ -40,7 +40,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2.3.8",
-    "tsdown": "^0.16.8",
+    "tsdown": "^0.17.2",
     "typescript": "^5.8.3",
     "vitest": "^4.0.15"
   },
