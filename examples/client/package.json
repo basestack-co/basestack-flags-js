@@ -9,7 +9,7 @@
     "update:deps": "bun update -i"
   },
   "dependencies": {
-    "vite": "^7.2.7"
+    "vite": "^7.3.0"
   },
   "devDependencies": {
     "typescript": "^5.8.3"
