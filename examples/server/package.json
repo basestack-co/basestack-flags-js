@@ -8,6 +8,6 @@
     "update:deps": "bun update -i"
   },
   "dependencies": {
-    "hono": "^4.11.1"
+    "hono": "^4.11.3"
   }
 }
